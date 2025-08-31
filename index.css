@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #6f42c1;     /* morado principal */
+    --secondary-color: #f5f5f5;   /* fondo claro para secciones */
+    --accent-color: #9b5de5;      /* morado más brillante para botones o highlights */
+    --text-color: #1a1a1a;        /* color principal del texto */
+    --text-light: #ffffff;        /* texto sobre fondo oscuro */
+  }
+  
+  /* Hero con color principal */
+  .hero.is-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--text-light);
+  }
+  
+  /* Botones */
+  .button.is-primary {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+  }
+  
+  .button.is-primary:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* Secciones de fondo claro */
+  .section {
+    background-color: var(--secondary-co
+  
