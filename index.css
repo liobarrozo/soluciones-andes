@@ -1,29 +1,51 @@
+/* Variables de color */
 :root {
-    --primary-color: #6f42c1;     /* morado principal */
-    --secondary-color: #f5f5f5;   /* fondo claro para secciones */
-    --accent-color: #9b5de5;      /* morado más brillante para botones o highlights */
-    --text-color: #1a1a1a;        /* color principal del texto */
-    --text-light: #ffffff;        /* texto sobre fondo oscuro */
-  }
-  
-  /* Hero con color principal */
-  .hero.is-primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: var(--text-light);
-  }
-  
-  /* Botones */
-  .button.is-primary {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    border: none;
-  }
-  
-  .button.is-primary:hover {
-    background-color: var(--accent-color);
-  }
-  
-  /* Secciones de fondo claro */
-  .section {
-    background-color: var(--secondary-co
-  
+  --primary-color: #6f42c1;
+  --accent-color: #9b5de5;
+  --text-light: #ffffff;
+  --text-dark: #1a1a1a;
+  --font-heading: "Roboto", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+/* Hero */
+.custom-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  font-family: var(--font-heading);
+}
+
+.custom-hero .title {
+  font-size: 3.5rem;
+}
+
+.custom-hero .subtitle {
+  font-size: 1.75rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+/* Botón */
+.custom-button {
+  background-color: var(--text-light);
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #e0d4f5;
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
