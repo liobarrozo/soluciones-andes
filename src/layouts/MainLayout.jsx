@@ -1,7 +1,7 @@
 // src/layouts/MainLayout.jsx
 import React from 'react';
 import Header from './Header';
-// import Footer from './Footer'; 
+import Footer from './Footer'; 
 
 const MainLayout = ({ children }) => {
     return (
@@ -10,7 +10,7 @@ const MainLayout = ({ children }) => {
             <main>
                 {children} 
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };

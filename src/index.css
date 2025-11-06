@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
@@ -35,3 +38,8 @@
   --depth: 0;
   --noise: 0;
 }
+
+
+
+
+
