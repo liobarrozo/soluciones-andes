@@ -60,7 +60,7 @@ const ContactSection = () => {
                     {/* === Formulario de Contacto === */}
                     <div className="lg:w-2/3">
                         <h3 className="text-2xl font-semibold mb-6 text-primary border-b pb-2 border-secondary/50">
-                            Envíanos un Mensaje
+                            Envíanos un mensaje
                         </h3>
                         
                         {/* 3. El onSubmit utiliza la función de Formspree */}
@@ -69,7 +69,7 @@ const ContactSection = () => {
                             {/* Campo Nombre */}
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text text-base-content">Tu Nombre</span>
+                                    <span className="label-text text-base-content">Nombre</span>
                                 </label>
                                 <input type="text" placeholder="Ej: Juan Pérez" className="input input-bordered w-full" name="Nombre" required />
                                 <ValidationError 
@@ -82,7 +82,7 @@ const ContactSection = () => {
                             {/* Campo Email */}
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text text-base-content">Tu Email</span>
+                                    <span className="label-text text-base-content">Email</span>
                                 </label>
                                 <input type="email" placeholder="ejemplo@correo.com" className="input input-bordered w-full" name="Email" required />
                                 <ValidationError 
@@ -95,7 +95,7 @@ const ContactSection = () => {
                             {/* Campo de Servicio de Interés */}
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text text-base-content">Servicio de Interés</span>
+                                    <span className="label-text text-base-content">Servicio de interés</span>
                                 </label>
                                 <select className="select select-bordered w-full" name="Servicio">
                                     <option disabled defaultValue>Selecciona un servicio</option>
@@ -112,9 +112,9 @@ const ContactSection = () => {
                             </div>
 
                             {/* Campo de Mensaje */}
-                            <div className="form-control">
+                            <div className="form-control grid">
                                 <label className="label">
-                                    <span className="label-text text-base-content">Mensaje / Requerimiento</span>
+                                    <span className="label-text text-base-content">Mensaje</span>
                                 </label>
                                 <textarea className="textarea textarea-bordered h-24" placeholder="Describe brevemente lo que necesitas..." name="Mensaje"></textarea>
                                 <ValidationError 
